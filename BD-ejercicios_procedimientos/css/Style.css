@@ -1,0 +1,51 @@
+body{
+	background-image: url('img/fondo.jpg');
+	/*background-color: rgb(246, 225, 242)!important;*/
+}
+.cont-principal{
+	margin-top: 10%;	
+}
+.contCasa{
+	margin-top: 5%;
+}
+#casaIMG{
+	width: 310px;
+	/*animation: casaAnimation 5s infinite;*/
+	transform: rotateZ(-30deg);
+}
+.contEmpleado{
+	margin-top: 10%;
+}
+#empleadoIMG{
+	width: 190px;
+	transform: rotateZ(10deg);
+}
+.contTelevisor{
+	margin-top: 5%;
+}
+#televisorIMG{
+	width: 200px;
+	transform: rotateZ(-20deg);
+}
+.tblVisualizar{
+	display: none;
+}
+.campErr{
+	border: 2px solid red!important;
+}
+.msjError{
+	color: red;
+	font-size: 1em;
+	display: none;
+	float: right;
+}/*
+@-webkit-keyframes casaAnimation{
+	from{
+		transform: rotate(-30deg);
+	}
+	to{
+		transform: rotate(30deg);
+
+	}
+}
+*/

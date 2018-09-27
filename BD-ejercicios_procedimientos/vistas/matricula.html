@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Matricula</title>
+	<link rel="stylesheet" type="text/css" href="../css/Style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+	<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/matricula.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3>Ejemplo Matricula!</h3>
+			</div>
+			<div class="panel-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="txtCedula" class="col-sm-2 control-label">Cedula:</label>
+						<div class="col-sm-5">
+							<input type="text" id="txtCedula" class="form-control">
+							<span class="msjError">Debes llenar este campo *</span>
+						</div>
+						<div class="col-sm-1">
+							<button type="button" class="btn btn-default" id="btnBuscar" name="buscar"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="txtCosto" class="col-sm-2 control-label">Costo:</label>
+						<div class="col-sm-5">
+							<div class="input-group">
+							  <span class="input-group-addon">$</span>
+							  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="txtCosto">
+							  <span class="input-group-addon">.00</span>
+							  <span class="msjError">Debes llenar este campo *</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="txtPlan" class="col-sm-2 control-label">Plan:</label>
+						<div class="col-sm-5">
+							<select id="txtPlan" class="form-control">
+								<option value="">Seleccione...</option>
+								<option value="pronto">Pronto</option>
+								<option value="ordinaria">Ordinaria</option>
+								<option value="extraordinaria">Extraordinaria</option>
+								<option value="extemporanea">Extemporanea</option>
+							</select>
+							<span class="msjError">Debes llenar este campo *</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+				        	<button type="submit" class="btn btn-default" id="btnGuardar" name="guardar">Guardar</button>
+				      </div>
+					</div>
+				</form>
+				<table class="table tblVisualizar">
+					<thead>
+						<tr>
+							<th>Cedula</th>
+							<th>Costo</th>
+							<th>Plan</th>
+							<th>Valor Matricula</th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id="tblResultado"></tbody>
+				</table>
+			</div>
+		</div>
+		<button class="btn btn-success btn-lg" id="btnVolver">volver</button>
+	</div>
+
+</body>
+</html>
